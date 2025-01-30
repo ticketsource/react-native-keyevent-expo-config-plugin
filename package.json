@@ -1,13 +1,13 @@
 {
   "name": "react-native-keyevent-expo-config-plugin",
-  "version": "1.49.0",
+  "version": "1.50.0",
   "description": "Config plugin to auto configure react-native-keyevent on prebuild",
   "main": "build/withReactNativeKeyevent.js",
   "types": "build/withReactNativeKeyevent.d.ts",
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/chronsyn/react-native-keyevent-expo-config-plugin.git"
+    "url": "https://github.com/ticketsource/react-native-keyevent-expo-config-plugin.git"
   },
   "scripts": {
     "build": "expo-module build",
@@ -22,14 +22,23 @@
     "build",
     "app.plugin.js"
   ],
-  "author": "Scott Pritchard",
+  "author": {
+    "name": "Scott Pritchard",
+    "url": "https://github.com/ChronSyn"
+  },
+  "contributors": [
+    {
+      "name": "Christian Freear",
+      "url": "https://github.com/cfreear"
+    }
+  ],
   "devDependencies": {
-    "expo-module-scripts": "^3.1.1"
+    "expo-module-scripts": "^3.4.0"
   },
   "peerDependencies": {
-    "expo": "^49.0.0"
+    "expo": "^50.0.0"
   },
   "dependencies": {
-    "@expo/config-plugins": "~7.2.2"
+    "@expo/config-plugins": "^7.8.0"
   }
 }
