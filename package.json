@@ -1,6 +1,6 @@
 {
   "name": "react-native-keyevent-expo-config-plugin",
-  "version": "1.51.0",
+  "version": "1.52.0",
   "description": "Config plugin to auto configure react-native-keyevent on prebuild",
   "main": "build/withReactNativeKeyevent.js",
   "types": "build/withReactNativeKeyevent.d.ts",
@@ -36,9 +36,9 @@
     "expo-module-scripts": "^3.5.2"
   },
   "peerDependencies": {
-    "expo": "^51.0.0"
+    "expo": "^52.0.0"
   },
   "dependencies": {
-    "@expo/config-plugins": "~8.0.0"
+    "@expo/config-plugins": "~9.0.0"
   }
 }
