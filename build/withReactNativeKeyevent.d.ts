@@ -1,3 +1,3 @@
-import { ConfigPlugin } from "@expo/config-plugins";
-declare const initPlugin: ConfigPlugin;
-export default initPlugin;
+import { ConfigPlugin } from '@expo/config-plugins';
+declare const withKeyEvent: ConfigPlugin;
+export default withKeyEvent;
