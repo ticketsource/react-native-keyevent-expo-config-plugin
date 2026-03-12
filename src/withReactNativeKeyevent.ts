@@ -4,9 +4,7 @@ import { mergeContents } from '@expo/config-plugins/build/utils/generateCode';
 const withIosAppDelegateImport: ConfigPlugin = (config) => {
     return withAppDelegate(config, (config) => {
         const contents = config.modResults.contents;
-
-        // Detect if this is Swift or Objective-C
-        const isSwift = contents.includes('@UIApplicationMain') && contents.includes('public class AppDelegate');
+        const isSwift = config.modResults.language === 'swift';
 
         if (isSwift) {
             // Swift AppDelegate - add import at the top
@@ -49,9 +47,7 @@ const withIosAppDelegateImport: ConfigPlugin = (config) => {
 const withIosAppDelegateBody: ConfigPlugin = (config) => {
     return withAppDelegate(config, (config) => {
         const contents = config.modResults.contents;
-
-        // Detect if this is Swift or Objective-C
-        const isSwift = contents.includes('@UIApplicationMain') && contents.includes('public class AppDelegate');
+        const isSwift = config.modResults.language === 'swift';
 
         if (isSwift) {
             // Swift AppDelegate
